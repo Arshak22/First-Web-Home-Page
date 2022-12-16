@@ -1,0 +1,9 @@
+.mainPicture {
+    width: 100%;
+    min-height: 500px;
+    background-image: url(../../assets/images/simple-house-01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 70%;
+    background-attachment: fixed;
+}
