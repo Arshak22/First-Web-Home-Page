@@ -1,0 +1,35 @@
+.myArticle {
+    max-width: 320px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.articlePic {
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.figureTitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #1A6692;
+    margin-bottom: 15px;
+}
+
+.figureDesc {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: #626364;
+    line-height: 1.8;
+}
+
+.figurePrice {
+    font-size: 1.25rem;
+    color: #2F956D;
+    margin-bottom: 60px;
+}

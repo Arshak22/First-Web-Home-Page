@@ -1,8 +1,12 @@
 .main {
+    display: block;
+    margin-top: 50px;
+}
+
+.buttons {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 .btn1 {
@@ -16,6 +20,22 @@
 }
 
 .btn1:hover {
+    color: white;
+    background-color: #2F956D;
+}
+
+.gallery {
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
     color: white;
     background-color: #2F956D;
 }
