@@ -1,0 +1,51 @@
+.section {
+    margin-top: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.columnLeft {
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.columnRight {
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+.sectionTitle {
+    color: #1A6692;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.leftText {
+    text-align: left;
+    line-height: 30px;
+}
+
+.btn2 {
+    font-size: 15px;
+    padding: 10px 30px;
+    color: black;
+    background-color: transparent;
+    border: 2px solid rgb(104, 104, 104);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.rightBtn {
+    position: relative;
+    left: 430px;
+    margin-top: 50px;
+    /* margin-right: 0;
+    padding-left: 0; */
+}
