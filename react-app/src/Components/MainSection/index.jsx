@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
+import Welcome from "../Welcome";
+import Section from "../Section";
 import GalleryArticle from '../GalleryArticle';
 import Pizza1 from '../../assets/images/pizza-1.jpg';
 import Pizza2 from '../../assets/images/pizza-2.jpg';
@@ -9,6 +11,7 @@ import Pizza5 from '../../assets/images/pizza-5.jpg';
 import Pizza6 from '../../assets/images/pizza-6.jpg';
 import Pizza7 from '../../assets/images/pizza-7.jpg';
 import Pizza8 from '../../assets/images/pizza-8.jpg';
+import Mirg from "../../assets/images/section-image.jpg";
 
 class MainSection extends Component {
     hideGallery = (e) => {
@@ -26,6 +29,7 @@ class MainSection extends Component {
     render() {
         return (
             <div className='main'>
+                <Welcome />
                 <div className='buttons'>
                     <button className='option btn1' id='0' onClick={this.hideGallery}>Pizza</button>
                     <button className='option btn1' id='1' onClick={this.hideGallery}>Salad</button>
@@ -61,6 +65,7 @@ class MainSection extends Component {
                     <GalleryArticle />
                     <GalleryArticle />
                 </div>
+                <Section image={Mirg} title="Maecenas nulla neque" text="Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis." btnText="Read More" />
             </div>
         );
     }
