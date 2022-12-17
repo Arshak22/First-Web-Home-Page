@@ -1,10 +1,12 @@
-.welcome {
+.intro {
     text-align: center;
     margin-top: 70px;
 }
 
-.welcomeDescription {
+.introDescription {
+    font-size: 20px;
     padding: 0px 400px;
     margin-top: 70px;
-    line-height: 30px;
+    color: #626364;
+    line-height: 1.8;
 }

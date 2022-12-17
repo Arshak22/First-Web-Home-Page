@@ -1,14 +1,10 @@
 import React from "react";
-import MainPicture from "./Components/MainPictureSection";
-import MainSection from "./Components/MainSection";
-import Footer from "./Components/Footer";
+import Home from "./Pages/Home";
 
 function App() {
   return (
     <div className="App">
-      <MainPicture />
-      <MainSection />
-      <Footer />
+      <Home />
     </div>
   );
 }

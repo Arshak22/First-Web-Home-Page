@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './style.css';
-import Welcome from "../Welcome";
+import Welcome from "../Intro";
 import Section from "../Section";
 import GalleryArticle from '../GalleryArticle';
 import Pizza1 from '../../assets/images/pizza-1.jpg';
@@ -18,6 +18,7 @@ class MainSection extends Component {
         super(props);
         this.state = {
             list: [
+                // Pizzas
                 {
                     img: Pizza1,
                     title: "Fusce dictum finibus",
@@ -27,95 +28,139 @@ class MainSection extends Component {
                 },
                 {
                     img: Pizza2,
-                    title: "Fusce",
+                    title: "Aliquam sagittis",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$40",
+                    price: "$65 / $70",
                     type: "pizza"
                 },
                 {
                     img: Pizza3,
-                    title: "Fusce dictum fins",
+                    title: "Sed varius turpis",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$25",
+                    price: "$30.50",
                     type: "pizza"
                 },
                 {
                     img: Pizza4,
-                    title: "Fusce dictum finibus",
+                    title: "Aliquam sagittis",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$15",
-                    type: "pizza"
-                },
-                {
-                    img: Pizza4,
-                    title: "Fusce dictum finibus",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$15",
-                    type: "pizza"
-                },
-                {
-                    img: Pizza4,
-                    title: "Fusce dictum finibus",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$15",
+                    price: "$25.50",
                     type: "pizza"
                 },
                 {
                     img: Pizza5,
-                    title: "Fusce dictum",
+                    title: "Maecenas eget justo",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
-                    type: "salad"
+                    price: "$80.25",
+                    type: "pizza"
                 },
                 {
                     img: Pizza6,
-                    title: "Fusce dictum",
+                    title: "Quisque et felis eros",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
-                    type: "salad"
+                    price: "$20 / $40 / $60",
+                    type: "pizza"
                 },
                 {
                     img: Pizza7,
-                    title: "Fusce dictum",
+                    title: "Sed ultricies dui",
                     decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
+                    price: "$94",
+                    type: "pizza"
+                },
+                {
+                    img: Pizza8,
+                    title: "Donec porta consequat",
+                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
+                    price: "$15",
+                    type: "pizza"
+                },
+                // Salads
+                {
+                    img: Pizza4,
+                    title: "Salad Menu One",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$25",
+                    type: "salad"
+                },
+                {
+                    img: Pizza3,
+                    title: "Second Title Salad",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$30",
+                    type: "salad"
+                },
+                {
+                    img: Pizza5,
+                    title: "Third Salad Item",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$45",
+                    type: "salad"
+                },
+                {
+                    img: Pizza1,
+                    title: "Superior Salad",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$50",
                     type: "salad"
                 },
                 {
                     img: Pizza8,
-                    title: "Fusce dictum",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
+                    title: "Sed ultricies dui",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$55 / $60",
                     type: "salad"
                 },
                 {
+                    img: Pizza7,
+                    title: "Maecenas eget justo",
+                    decription: "Proin eu velit egestas, viverra sapien eget, consequat nunc. Vestibulum tristique",
+                    price: "$75",
+                    type: "salad"
+                },
+                // Noodles
+                {
+                    img: Pizza8,
+                    title: "Noodle One",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$12.50",
+                    type: "noodle"
+                },
+                {
+                    img: Pizza7,
+                    title: "Noodle Secons",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$15.50",
+                    type: "noodle"
+                },
+                {
+                    img: Pizza6,
+                    title: "Third Soft Noodle",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$20.50",
+                    type: "noodle"
+                },
+                {
+                    img: Pizza5,
+                    title: "Aliquam sagittis",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$30.25",
+                    type: "noodle"
+                },
+                {
                     img: Pizza4,
-                    title: "Fusce dictum",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
-                    type: "noodle"
-                },
-                {
-                    img: Pizza2,
-                    title: "Fusce dictum",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
-                    type: "noodle"
-                },
-                {
-                    img: Pizza1,
-                    title: "Fusce dictum",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
+                    title: "Maecenas eget justo",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$35.50",
                     type: "noodle"
                 },
                 {
                     img: Pizza3,
-                    title: "Fusce dictum",
-                    decription: "Nam in suscipit nisi, sit amet consectetur metus. Ut sit amet tellus accumsan",
-                    price: "$45 / $55",
+                    title: "Quisque et felis eros",
+                    decription: "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+                    price: "$40.50",
                     type: "noodle"
-                }
+                }                
             ],
             active: null,
             filterList: []
@@ -134,7 +179,7 @@ class MainSection extends Component {
     render() {
         return (
             <div className='main'>
-                <Welcome />
+                <Welcome title="Welcome to Simple House" text="Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites."/>
                 <div className='buttons'>
                     <button className={`btn1 ${this.state.active === "pizza" ? "active": null}`} onClick={()=>this.filterOptions("pizza")}>Pizza</button>
                     <button className={`btn1 ${this.state.active === "salad" ? "active": null}`} onClick={()=>this.filterOptions("salad")}>Salad</button>

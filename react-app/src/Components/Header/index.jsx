@@ -3,6 +3,21 @@ import './style.css';
 import image from '../../assets/images/simple-house-logo.png';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            active: null
+        }
+    }
+
+    componentDidMount() {
+        this.handleActive("home");
+    }
+
+    handleActive = (e) => {
+        this.setState({active: e});
+    }
+
      render() {
         return (
             <div className='myHeader'>
@@ -16,9 +31,9 @@ class Header extends Component {
                     </div>
                     <nav className='navCol'>
                         <ul className='nav'>
-                            <li className='navItem'>Home</li>
-                            <li className='navItem'>About</li>
-                            <li className='navItem'>Contact</li>
+                            <li className={`navItem ${this.state.active === "home" ? "activeNav": null}`} onClick={()=>this.handleActive("home")}>Home</li>
+                            <li className={`navItem ${this.state.active === "about" ? "activeNav": null}`} onClick={()=>this.handleActive("about")}>About</li>
+                            <li className={`navItem ${this.state.active === "contact" ? "activeNav": null}`} onClick={()=>this.handleActive("contact")}>Contact</li>
                         </ul>
                     </nav>
                 </div>

@@ -67,3 +67,8 @@
     text-decoration: underline;
     text-underline-offset: 20px;
 }
+
+.activeNav {
+    text-decoration: underline;
+    text-underline-offset: 20px;
+}
