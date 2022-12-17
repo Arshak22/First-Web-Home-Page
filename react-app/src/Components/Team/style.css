@@ -1,0 +1,67 @@
+.teamMember {
+    max-width: 590px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.person {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.personInfo {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.name {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #09C;
+    margin-bottom: 5px;
+}
+
+.profession {
+    color: #C39;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.info {
+    margin-bottom: 20px;
+    color: #626364;
+    line-height: 1.8;
+}
+
+.social {
+    color: #626364;
+    display: inline-block;
+    border-radius: 1px;
+    background-color: transparent;
+    font-size: 1.3rem;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.social:hover {
+    background-color: #626364;
+    color: white;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}

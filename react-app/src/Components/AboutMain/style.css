@@ -1,0 +1,19 @@
+.team {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutPic {
+    position: relative;
+    margin: 0 auto;
+    min-height: 300px;
+    width: 1230px;
+    background-image: url(../../assets/images/about-pic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70% 70%;
+    background-attachment: fixed;
+
+}
