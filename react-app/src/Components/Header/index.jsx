@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import './style.css';
 import image from '../../assets/images/simple-house-logo.png';
+import { Link } from "react-router-dom";
 
 class Header extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            active: null
+            active: "home"
         }
-    }
-
-    componentDidMount() {
-        this.handleActive("home");
     }
 
     handleActive = (e) => {
@@ -31,9 +28,9 @@ class Header extends Component {
                     </div>
                     <nav className='navCol'>
                         <ul className='nav'>
-                            <li className={`navItem ${this.state.active === "home" ? "activeNav": null}`} onClick={()=>this.handleActive("home")}>Home</li>
-                            <li className={`navItem ${this.state.active === "about" ? "activeNav": null}`} onClick={()=>this.handleActive("about")}>About</li>
-                            <li className={`navItem ${this.state.active === "contact" ? "activeNav": null}`} onClick={()=>this.handleActive("contact")}>Contact</li>
+                            <li className={`navItem ${this.state.active === "home" ? "activeNav": null}`} onClick={()=>this.handleActive("home")}><Link to="/">Home</Link></li>
+                            <li className={`navItem ${this.state.active === "about" ? "activeNav": null}`} onClick={()=>this.handleActive("about")}><Link to="/about">About</Link></li>
+                            <li className={`navItem ${this.state.active === "contact" ? "activeNav": null}`} onClick={()=>this.handleActive("contact")}><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
                 </div>

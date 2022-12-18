@@ -1,19 +1,21 @@
 import React from "react";
-import Header from "./Components/MainPictureSection";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Contact from "./Pages/Contact";
-import Footer from "./Components/Footer";
+import Layout from "./Pages/Layout";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      {/* <Home /> */}
-      {/* <About /> */}
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

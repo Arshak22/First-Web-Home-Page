@@ -63,6 +63,11 @@
     cursor: pointer;
 }
 
+.navItem a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .navItem:hover {
     text-decoration: underline;
     text-underline-offset: 20px;
