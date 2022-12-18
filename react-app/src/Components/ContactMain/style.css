@@ -57,3 +57,8 @@
     position: relative;
     left: 26px;
 }
+
+.Accordion {
+    margin: 0 auto;
+    width: 670px;
+}

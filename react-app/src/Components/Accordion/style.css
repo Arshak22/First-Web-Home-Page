@@ -1,0 +1,47 @@
+.accordion {
+    font-size: 1.2rem;
+    font-family: 'Open Sans',Helevetica,Arial,sans-serif;
+    color: #999;
+    background-color: transparent;
+    border: 1px solid #d0d0d0;
+    margin-bottom: 17px;
+    margin-top: 17px;
+    cursor: pointer;
+    padding: 10px 20px 6px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:hover {
+    color: #09C;
+}
+
+.accordionIcon {
+    float: right;
+    font-size: 2rem;
+}
+
+
+.panel {
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.panel p {
+    padding: 5px 20px 30px;
+    color: #626364;
+    line-height: 1.8;
+}
+
+.activeAccordion {
+    color: #09C;
+}
+
+.activeContent {
+    opacity: 1;
+    height: auto;
+}
