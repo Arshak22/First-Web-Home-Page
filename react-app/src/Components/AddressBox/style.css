@@ -1,0 +1,30 @@
+.addressBox {
+    padding-right: 90px;
+}
+
+.addressTitle {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: #319966;
+}
+
+.addressText {
+    font-style: normal;
+    margin-bottom: 50px;
+    color: #626364;
+    line-height: 1.8;
+}
+
+.contact {
+    display: inline-block;
+    color: #626364;
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.contactIcon {
+    display: inline-block;
+    margin-right: 25px;
+    color: #319966;
+}
