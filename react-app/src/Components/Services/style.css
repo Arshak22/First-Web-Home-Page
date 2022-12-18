@@ -1,0 +1,57 @@
+.services {
+    margin: 50px auto;
+    width: 1270px;
+    display: flex;
+    justify-content: center;
+}
+
+.col {
+    text-align: center;
+    padding: 45px 45px;
+}
+
+.serviceIcon {
+    font-size: 4em;
+    color: #9f9c9c;
+    margin-bottom: 65px;
+}
+
+.serviceDesc {
+    margin-bottom: 35px;
+    font-size: 1rem;
+    color: #626364;
+    line-height: 1.8;
+}
+
+.btn3 {
+    padding: 10px 30px;
+    font-size: 1rem;
+    border: none;
+    transition: all 0.3s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.blue {
+    background-color: #2D99CC;
+}
+
+.blue:hover {
+    background-color: #1b6f96;
+}
+
+.green {
+    background-color: #319966;
+}
+
+.green:hover {
+    background-color: #1d6e46;
+}
+
+.red {
+    background-color: #993332;
+}
+
+.red:hover {
+    background-color: #752423;
+}

@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import './style.css';
 import About from "../Intro";
 import Team from '../Team';
+import Services from '../Services';
+import Section2 from '../Section-2';
 import Person1 from "../../assets/images/person-1.jpg";
 import Person2 from "../../assets/images/person-2.jpg";
 import Person3 from "../../assets/images/person-3.jpg";
 import Person4 from "../../assets/images/person-4.jpg";
+import Kitchen from "../../assets/images/kitchen.jpg";
 
 class AboutMain extends Component {
     constructor(props) {
@@ -61,6 +64,8 @@ class AboutMain extends Component {
                     })}
                 </div>
                 <div className='aboutPic'></div>
+                <Services text1="Donec sed orci fermentum, convallis lacus id, tempus elit. Sed eu neque accumsan, porttitor arcu a, interdum est. Donec in risus eu ante." text2="Maecenas pretium rutrum molestie. Duis dignissim egestas turpis sit. Nam sed suscipit odio. Morbi in dolor finibus, consequat nisl eget." text3="Morbi in dolor finibus, consequat nisl eget, pretium nunc. Maecenas pretium rutrum molestie. Duis dignissim egestas turpis sit." />
+                <Section2 image={Kitchen} title="History of our restaurant" text1="Sed ligula risus, interdum aliquet imperdiet sit amet, auctor sit amet justo. Maecenas posuere lorem id augue interdum vehicula. Praesent sed leo eget libero ultricies congue." text2="Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis." />
             </div>
         );
     }

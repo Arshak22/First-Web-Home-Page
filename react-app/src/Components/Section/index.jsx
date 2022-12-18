@@ -11,7 +11,7 @@ class Section extends Component {
                 </div>
                 <div className='columnRight'>
                     <h1 className='leftText sectionTitle'>{title}</h1>
-                    <p className='leftText'>{text}</p>
+                    <p className='leftText grey'>{text}</p>
                     <button className='btn2 rightBtn'>{btnText}</button>
                 </div>
             </div>
