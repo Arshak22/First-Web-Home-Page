@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './style.css';
 import image from '../../assets/images/simple-house-logo.png';
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 class Header extends Component {
     constructor(props) {
