@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import './style.css';
+import { Link } from "react-router-dom";
 
 class Section extends Component {   
     render() {
-        const{image, title, text, btnText} = this.props
+        const{image, title, text, btnText, btnLink} = this.props
         return (
             <div className='section'>
                 <div className='columnLeft'>
@@ -12,7 +13,7 @@ class Section extends Component {
                 <div className='columnRight'>
                     <h1 className='leftText sectionTitle'>{title}</h1>
                     <p className='leftText grey'>{text}</p>
-                    <button className='btn2 rightBtn'>{btnText}</button>
+                    <Link to={`/${btnLink}`}><button className='btn2 rightBtn'>{btnText}</button></Link>
                 </div>
             </div>
         );

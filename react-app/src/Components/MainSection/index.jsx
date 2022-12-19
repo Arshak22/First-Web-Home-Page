@@ -190,7 +190,7 @@ class MainSection extends Component {
                         return <GalleryArticle key={index} img={elem.img} title={elem.title} text={elem.decription} price={elem.price}/>
                     })}
                 </div>
-                <Section image={Mirg} title="Maecenas nulla neque" text="Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis." btnText="Read More" />
+                <Section image={Mirg} title="Maecenas nulla neque" text="Phasellus dui velit, feugiat sed elit ut, facilisis aliquam metus. Ut id bibendum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas interdum porttitor imperdiet. Integer facilisis." btnText="Read More" btnLink="about" />
             </div>
         );
     }
