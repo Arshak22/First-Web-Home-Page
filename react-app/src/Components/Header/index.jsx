@@ -4,17 +4,6 @@ import image from '../../assets/images/simple-house-logo.png';
 import { NavLink } from "react-router-dom";
 
 class Header extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            active: "home"
-        }
-    }
-
-    handleActive = (e) => {
-        this.setState({active: e});
-    }
-
      render() {
         return (
             <div className='myHeader'>
