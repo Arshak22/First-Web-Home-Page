@@ -5,7 +5,7 @@ import AddressBox from '../AddressBox';
 import Map from '../Map';
 import Accordion from '../Accordion';
 
-function ContactMain() {
+export default function ContactMain() {
         const [addressInfo, setAddressInfo] = useState(
                 {
                     title: "Our Address",
@@ -71,6 +71,3 @@ function ContactMain() {
             </div>
         );
 }
-
-
-export default ContactMain
