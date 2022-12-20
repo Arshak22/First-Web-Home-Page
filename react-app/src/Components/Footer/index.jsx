@@ -1,15 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.css';
 
-class Footer extends Component {
-    render() {
-        return (
+function Footer() {
+    return (
             <div>
                 <p className='copyright'>Copyright © 2045 Simple House | Design: TemplateMo</p>
                 <div className='footer'></div>
             </div>
-        );
-    }
+    );
 }
 
-export default Footer
+export default Footer;
